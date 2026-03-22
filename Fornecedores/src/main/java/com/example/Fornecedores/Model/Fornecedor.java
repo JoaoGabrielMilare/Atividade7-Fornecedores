@@ -10,17 +10,18 @@ public class Fornecedor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "FORNECEDOR_NOME")
-    private String nome;
+    @Column(name = "FORNECEDOR_NOME_FANTASIA")
+    private String nomeFantasia;
 
-    @Column(name = "FORNECEDOR_EMAIL")
-    private String email;
+    @Column(name = "FORNECEDOR_CNPJ")
+    private String cnpj;
 
-    @Column(name = "FORNECEDOR_TELEFONE")
-    private String telefone;
+    @Column(name = "FORNECEDOR_CONTATO")
+    private String contato;
 
     public Fornecedor() {
     }
+
 
     public Long getId() {
         return id;
@@ -30,27 +31,27 @@ public class Fornecedor {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeFantasia() {
+        return nomeFantasia;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeFantasia(String nomeFantasia) {
+        this.nomeFantasia = nomeFantasia;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCnpj() {
+        return cnpj;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getContato() {
+        return contato;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setContato(String contato) {
+        this.contato = contato;
     }
 }
